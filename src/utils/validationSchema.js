@@ -35,3 +35,15 @@ export const validiteShemaProduct = async (req, res, next) => {
         });
     }
 };
+
+export const orderSchema = joi.array().items(joi.object({
+    produto_id: joi.number().min(1).required(),
+    quantidade: joi.number().min(1).required(),
+    preco_unitario: joi.number().min(50).required()
+  })).min(1)
+
+export const itemSchema = joi.object({
+  produto_id: joi.number().min(1).required(),
+    quantidade: joi.number().min(1).required(),
+    preco_unitario: joi.number().min(50).required()
+})

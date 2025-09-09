@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { validiteShemaProduct } from "../middleware/validationSchema.js";
+import { validiteShemaProduct } from "../utils/validationSchema.js";
 import { getAll,createProduct,updateProduct,deleteProduct} from "../controllers/productsController.js";
 
 const router = Router();

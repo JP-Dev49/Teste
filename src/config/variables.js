@@ -4,3 +4,4 @@ dotenv.config();
 
 export const port = process.env.PORT;
 export const keyJWT = process.env.WORD_SECRET_JWT;
+export const keyCookie = process.env.SECRET_COOKIE;

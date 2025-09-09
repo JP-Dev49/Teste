@@ -20,3 +20,10 @@ export class ServerError extends BadRequest{
     this.status  = 500
   }
 }
+export class NotFound extends BadRequest{
+  constructor(message){
+    super(message)
+    this.message = message,
+    this.status = 404
+  }
+}
