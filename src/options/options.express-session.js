@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const sessionOptions = {
   store: redisStore,
-  secret: process.env.SESSION_SECRET || 'fallbackSecret', // Use uma secret forte em produção
+  secret: process.env.SECRET_COOKIE || 'fallbackSecret', // Use uma secret forte em produção
   resave: false, // Evita regravar sessões não modificadas [citation:1][citation:3]
   saveUninitialized: false, // Não salva sessões vazias [citation:1][citation:3]
   rolling: true, // Renova o cookie a cada resposta [citation:1]
