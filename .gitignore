@@ -1,4 +1,9 @@
 node_modules/
 .env
 dist/
+*.lognode_modules/
+node_modules/
+.env
 *.log
+dist/
+coverage/
